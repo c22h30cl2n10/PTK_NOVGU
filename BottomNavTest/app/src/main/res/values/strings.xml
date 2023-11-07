@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Расписание ПТК</string>
+    <string name="password">Пароль</string>
+    <string name="email">Почта</string>
+    <string name="submit">Войти</string>
+    <string name="login">Вход</string>
+</resources>

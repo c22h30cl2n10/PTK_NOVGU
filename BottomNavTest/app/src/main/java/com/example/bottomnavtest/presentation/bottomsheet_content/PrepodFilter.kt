@@ -54,6 +54,10 @@ fun PrepodFilter(
         searchText.isBlank() || teacher.lastName.contains(searchText, ignoreCase = true)
                 || teacher.firstName.contains(searchText, ignoreCase = true)
                 || teacher.middleName.contains(searchText, ignoreCase = true)
+                || (searchText.equals(
+            "${teacher.firstName.first()}${teacher.middleName.first()}${teacher.lastName.first()}",
+            ignoreCase = true
+        ))
     }
     Column(
         modifier = Modifier
